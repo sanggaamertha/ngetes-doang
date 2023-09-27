@@ -21,11 +21,12 @@ body {
     position: relative;
     z-index: 1;
    
-    width: 150px;
-    height: 150px;
+    width: 15%;
+    height: 15%;
 }
 #gambarBackground {
   position: fixed;
+  width: 35%;
  
   z-index: -1; 
 }
@@ -34,13 +35,16 @@ body {
   position: fixed;
   top: 21%;
   right: 9%;
+  width: 28%;
  
   z-index: -1; 
 }
 #gambarAir {
   position: fixed;
-  top: 22%;
+  top: 23.5%;
   left: 8%;
+
+  width: 28%;
  
   z-index: -1; 
 }
@@ -51,7 +55,10 @@ p {
 .tombol-besar img {
     width: 150px; 
     height: 150px;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .tombol-teks {
@@ -60,16 +67,6 @@ p {
     text-align: center;
 }
 
-.teks-di-dalam-gambar {
-    position: absolute;
-    top: 50%;
-    text-align: justify;
-    margin-left: 10px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    color: #fff;
-}
 
 .container {
   position: absolute;
@@ -82,8 +79,7 @@ p {
 
 .love {
   position: absolute;
-  width: 30px; 
-  height: 35px;
+  
   background-image: url('pic/love.png'); 
   background-size: cover;
   transform-origin: center;
@@ -95,10 +91,10 @@ p {
 
 .aura {
   position: absolute;
-  width: 650px; 
-  height: 700px; 
+  width: 34%; 
+  height: 65%; 
   top: 20%;
-  left: 3%; 
+  left: 5%; 
   transform: translate(-50%, -50%); 
   border-radius: 50%;
   background: radial-gradient(circle, rgba(0, 0, 255, 0.9) 0%, transparent 140%);
@@ -108,10 +104,10 @@ p {
 
 .aura2 {
   position: absolute;
-  width: 650px; 
-  height: 700px;
+  width: 34%; 
+  height: 65%; 
   top: 20%;
-  right: 3%; 
+  right: 5%; 
   transform: translate(-50%, -50%); 
   border-radius: 50%;
   background: radial-gradient(circle, rgba(255, 0, 0, 0.9) 0%, transparent 120%);
@@ -125,7 +121,7 @@ marquee {
 
 
   width: 80%; 
-  height: 150px;
+  height: 15%; /* 150px */
   
   z-index: 1; 
 }
@@ -141,7 +137,7 @@ marquee img {
   background-color: black; 
   width: 83%; 
   top: 76%;
-  height: 160px; 
+  height: 16%; 
   z-index: -1; 
 }
 
